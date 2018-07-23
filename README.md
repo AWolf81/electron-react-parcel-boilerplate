@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/AWolf81/electron-react-parcel-boilerplate.svg?branch=master)](https://travis-ci.org/AWolf81/electron-react-parcel-boilerplate)
+
+[![codecov](https://codecov.io/gh/AWolf81/electron-react-parcel-boilerplate/branch/master/graph/badge.svg)](https://codecov.io/gh/AWolf81/electron-react-parcel-boilerplate)
+
 # Electron React Parcel.js boilerplate
 
 This boilerplate uses Parcel for building/bundling. It supports the following:
