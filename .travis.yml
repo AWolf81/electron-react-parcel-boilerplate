@@ -13,4 +13,4 @@ script:
     - node --version
     - yarn test:coverage
 
-after_success: yarn test:codecov
+after_success: yarn report-coverage
