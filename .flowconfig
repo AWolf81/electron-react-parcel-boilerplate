@@ -1,0 +1,18 @@
+[ignore]
+.*/node_modules/config-chain/test/broken.json
+.*/node_modules/bulma/.*
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+#module.file_ext=.js
+# ignore sass file extension
+#module.file_ext=!.sass
+#module.file_ext=.jsx
+#module.file_ext=.json
+
+[strict]
