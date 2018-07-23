@@ -1,6 +1,10 @@
 dist
 build
 .cache
-coverage
 node_modules
 *.log
+
+# coverage files
+.nyc_output
+coverage
+coverage.lcov

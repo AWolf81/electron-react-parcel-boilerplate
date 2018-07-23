@@ -13,10 +13,10 @@
     "start:electron": "electron .",
     "dist": "cross-env NODE_ENV=production npm-run-all build build:electron",
     "flow": "flow",
-    "test": "jest",
+    "test": "cross-env NODE_ENV=test nyc jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:coveralls": "nyc report --temp-directory=coverage --reporter=text-lcov | coveralls",
+    "report-coverage": "cross-env NODE_ENV=test nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "test:updateSnapshots": "jest --updateSnapshot"
   },
   "build": {
@@ -40,11 +40,12 @@
     "setupTestFrameworkScriptFile": "<rootDir>/config/test.setup.js"
   },
   "devDependencies": {
+    "babel-plugin-istanbul": "^4.1.6",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "babel-preset-react-app": "^3.1.2",
     "babel-runtime": "^6.26.0",
-    "coveralls": "^3.0.2",
+    "codecov": "^3.0.4",
     "cross-env": "^5.2.0",
     "electron": "^2.0.5",
     "electron-builder": "^20.24.4",
