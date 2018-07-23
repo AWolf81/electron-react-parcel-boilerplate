@@ -15,7 +15,7 @@
     "flow": "flow",
     "test": "cross-env NODE_ENV=test nyc jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
+    "test:coverage": "nyc jest",
     "report-coverage": "cross-env NODE_ENV=test nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "test:updateSnapshots": "jest --updateSnapshot"
   },
