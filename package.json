@@ -1,6 +1,6 @@
 {
-  "name": "basic_electron",
-  "version": "1.0.0",
+  "name": "electron_react_parcel_boilerplate",
+  "version": "0.0.1",
   "main": "./index.js",
   "license": "MIT",
   "scripts": {
@@ -20,7 +20,7 @@
     "test:updateSnapshots": "jest --updateSnapshot"
   },
   "build": {
-    "appId": "basic_electron",
+    "appId": "electron_react_parcel_boilerplate",
     "files": [
       "./index.js",
       {
