@@ -42,9 +42,9 @@ Run `yarn dist` to build for production - tweaking & extending `build` section i
 
 - [x] Add flowjs
 - [x] Add jest
+- [x] Improve starting of dev server - electron starts too early and displays blank page
 - [ ] Save builtin typescript linter setting of VS code to avoid errors for flowjs (error types only supported in ts files) - Disabled manually `@builtin typescript` for current workspace.
 - [ ] Add [Spectron](https://electronjs.org/spectron) for e2e testing
-- [ ] Improve starting of dev server - electron starts too early and displays blank page
 
 # Contribution
 
